@@ -1,0 +1,638 @@
+* {box-sizing: border-box}
+
+html, body {
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  font-family: 'Nunito Sans', sans-serif;
+  overscroll-behavior-x: none;
+  cursor:url("lampe.png") 20 20, auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.liste-element{
+  position: fixed;
+  background : white;
+  z-index: 10000003;
+  display: none;
+}
+
+/*.dot{
+  width: 700px;
+  height :700px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 9999px black;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  z-index: 100000;
+  pointer-events: none;
+}*/
+
+.hole {
+  width: 700px;
+  height: 700px;
+  box-shadow: 0 0 0 9999px rgb(0 0 0), inset 0 0 30px 30px rgb(0 0 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.map {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+
+.inner {
+  position:relative;
+  width:9000px;
+  height: 4500px;
+  background:url(../images/oui.png) no-repeat center center / 100% auto;
+}
+
+.hotspot {
+  position:absolute;
+
+}
+
+#hotspot1 {
+  top: 2979px;
+  left: 1220px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+
+}
+ #hotspot1:hover{
+  box-shadow: 0px 0px 100px red;
+  transition:all 300ms ease;
+  cursor:url("loop.png") 20 20, auto;
+
+}
+#hotspot1:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+#hotspot2 {
+  top: 2119px;
+  left: 3828px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+}
+ #hotspot2:hover{
+  box-shadow: 0px 0px 100px red;
+    transition:all 300ms ease;
+    cursor:url("loop.png") 20 20, auto;
+
+}
+
+#hotspot2:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+#hotspot3 {
+  top: 3980px;
+  left: 1055px;
+  width: 800px;
+  height: 400px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+}
+ #hotspot3:hover{
+  box-shadow: 0px 0px 100px red;
+    transition:all 300ms ease;
+    cursor:url("loop.png") 20 20, auto;
+
+}
+
+#hotspot3:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+#hotspot4 {
+  top: 2439px;
+  left: 4646px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+}
+ #hotspot4:hover{
+  box-shadow: 0px 0px 100px red;
+    transition:all 300ms ease;
+    cursor:url("loop.png") 20 20, auto;
+
+}
+
+#hotspot4:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+#hotspot5 {
+  top: 3714px;
+  left: 3854px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+}
+ #hotspot5:hover{
+  box-shadow: 0px 0px 100px red;
+    transition:all 300ms ease;
+    cursor:url("loop.png") 20 20, auto;
+
+}
+
+#hotspot5:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+#hotspot6 {
+  top: 156px;
+  left: 3630px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+}
+ #hotspot6:hover{
+  box-shadow: 0px 0px 100px red;
+    transition:all 300ms ease;
+    cursor:url("loop.png") 20 20, auto;
+
+}
+
+#hotspot6:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+#hotspot7 {
+  top: 3733px;
+  left: 6693px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+}
+ #hotspot7:hover{
+  box-shadow: 0px 0px 100px red;
+    transition:all 300ms ease;
+    cursor:url("loop.png") 20 20, auto;
+
+}
+
+#hotspot7:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+
+#hotspot8 {
+  top: 3089px;
+  left: 7485px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+}
+ #hotspot8:hover{
+  box-shadow: 0px 0px 100px red;
+    transition:all 300ms ease;
+    cursor:url("loop.png") 20 20, auto;
+
+}
+
+#hotspot8:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+
+#hotspot9 {
+  top: 4087px;
+  left: 8482px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /*background : red;
+  opacity: 0.8;*/
+
+}
+ #hotspot9:hover{
+  box-shadow: 0px 0px 100px red;
+    transition:all 300ms ease;
+    cursor:url("loop.png") 20 20, auto;
+
+}
+
+#hotspot9:active, .trouve, .trouve:hover{
+    transform:scale(0.8) translateY(0%) !important;
+    box-shadow: 0px 0px 100px green !important;
+
+}
+
+
+.count {
+  border : solid 2px black;
+  position:fixed;
+  top:20px;
+  left:20px;
+  background:white;
+  padding:10px 20px;
+  border-radius:30px;
+  font-size:32px;
+  z-index:100000000;
+  font-weight: 700;
+  transition: all 320ms ease;
+}
+.count:hover{
+  color:white;
+  background:black;
+  cursor:url("loop.png") 20 20, auto;
+
+}
+
+.count:active{
+ transition:all 100ms ease;
+ color:white;
+ background:black;
+ font-size: 1.4em;
+ transform: translateX(10%) translateY(12%);
+}
+
+.liste-element {
+  width:420px;
+  background:white;
+  padding:8px 16px;
+  padding-left:15px;
+  border-radius:15px;
+  margin-bottom:4px;
+  padding-top: 45px;
+  border : solid 2px black;
+  top : 100px;
+  right: 50px;
+  left: 20px;
+  bottom : 100px;
+  cursor:url("loop.png") 20 20, auto;
+
+}
+
+.liste-element .item-not-found {
+  display:block;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top:15px;
+}
+
+
+.liste-element .item-found {
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom : 10px;
+  display:none;
+}
+
+.menu-item.found .item-not-found {
+  font-weight: 700;
+  font-size: 30px;
+  padding-top:10px;
+  display:none;
+}
+
+.menu-item.found .item-found {
+  font-weight  :400;
+  font-size:18px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  display:block;
+}
+strong{
+  color : red;
+}
+.popup{
+  font-size : 50px;
+  font-weight:700;
+  background: white;
+  border : solid 2px Black;
+  padding : 40px;
+  z-index: 10000000000;
+  position:fixed;
+  top : 50%;
+  left :50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  border-radius : 15px;
+  cursor:url("loop.png") 20 20, auto;
+  display: none;
+
+
+
+
+}
+
+.popup-text{
+font-weight : 700;
+font-size:25px;
+padding-top:30px;
+}
+
+.boutton{
+  color: black;
+  background : white;
+  border:solid 2px black;
+  border-radius: 10px;
+  padding:10px;
+  text-align: center;
+  transition: all 320ms ease;
+  font-size : 30px;
+}
+.boutton:hover{
+  color:white;
+  background:black;
+  border:solid 2px black;
+}
+.boutton:active{
+ transition:all 100ms ease;
+ color:white;
+ background:black;
+ font-size: 25px;
+ transform: translateX(10%) translateY(12%);
+}
+
+.fiche {
+  position:fixed;
+  top:50px;
+  right:50px;
+  width:300px;
+  background:white;
+  padding:10px;
+  display:none;
+  z-index: 100000000000;
+  text-align : center;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top:15px;
+  border-radius: 15px;
+  border : solid 2px black;
+  cursor:url("loop.png") 20 20, auto;
+}
+
+.fiche.show {
+  display:block;
+  transition:all 100ms ease;
+}
+
+.close {
+  position:absolute;
+  top:30px;
+  right:30px;
+  background:white;
+  border : solid 2px black;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  cursor:pointer;
+  transform:scale(0);
+  transition:all 300ms ease;
+  z-index: 100000000000;
+  cursor:url("loop.png") 20 20, auto;
+}
+
+.close.show {
+  transform:scale(1);
+}
+
+#image1{
+  width :200px;
+  height : 150px;
+}
+
+#image2{
+  width :200px;
+  height : 150px;
+}
+
+#image3{
+  padding-top:20px;
+  width :250px;
+  height : 150px;
+}
+
+#image4{
+  padding-right: 21px;
+    width: 170px;
+    height: 200px;
+}
+
+#image5{
+  width :200px;
+  height : 100px;
+}
+
+#image6{
+  width :200px;
+  height : 150px;
+}
+
+#image7{
+  width :200px;
+  height : 175px;
+}
+
+#image8{
+  width :150px;
+  height : 250px;
+}
+#image9{
+  width :200px;
+  height : 150px;
+}
+#gif{
+  top:50%;
+  left:50%;
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.loading{
+  position: fixed;
+  width:100%;
+  height:100%;
+  background-color:black;
+  z-index: 99999999999999;
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .count{
+    font-size: 15px;
+    padding:10px;
+    border-radius: 15px;
+  }
+  .count:active{
+    font-size: 10px;
+    transform: translateX(8%) translateY(5%);
+  }
+  .liste-element{
+    width: 100%;
+    height: 80%;
+    background: white;
+    padding: 4px 8px;
+    padding-left: 8px;
+    border-radius: 0px 5px 5px 0px;
+    margin-bottom: 2px;
+    padding: 25px;
+    border:none;
+    top: 450px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    cursor: url(loop.png) 20 20, auto;
+    text-align: center;
+  }
+  .liste-element .item-not-found {
+    display:block;
+    font-weight: 700;
+    font-size: 17px;
+    padding-top:0px;
+  }
+  .liste-element .item-found {
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 2px;
+    padding-bottom : 2px;
+    display:none;
+  }
+  .menu-item.found .item-found {
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: block;
+}
+.fiche{
+  font-size: 15px;
+      top: 65px;
+      right: 20px;
+      width : 160px;
+
+}
+#image1{
+  width :70px;
+  height : 50px;
+}
+
+#image2{
+  width :70px;
+  height : 50px;
+}
+
+#image3{
+  padding-top: 0px;
+  width: 90px;
+  height: 32px;
+}
+
+#image4{
+  padding-right: 9px;
+    width: 72px;
+    height: 87px;
+    padding-top: 10px;
+}
+
+
+#image5{
+  width :100px;
+  height : 50px;
+}
+
+#image6{
+  width: 100px;
+    height: 80px;
+}
+
+#image7{
+  width: 100px;
+      height: 83px;
+}
+
+#image8{
+  width: 50px;
+    height: 90px;
+}
+
+#image9{
+  width: 100px;
+    height: 80px;
+}
+
+.close.show{
+  top:20px;
+  right:20px;
+}
+.popup{
+  width: 362px;
+    height: 280px;
+    font-size: 31px;
+    padding: 27px;
+}
+.popup-text {
+  font-weight: 700;
+  font-size: 21px;
+  padding-top: 19px;
+}
+
+.hole {
+  width: 500px;
+  height: 500px;
+}
