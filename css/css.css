@@ -621,18 +621,19 @@ padding-top:30px;
   right:20px;
 }
 .popup{
-      font-size: 23px;
-    padding: 25px;
+  width: 250px;
+  font-size: 31px;
+  padding: 22px;
 }
 .popup-text {
-  padding:10px;
+  padding: 10px;
   font-weight: 700;
   font-size: 15px;
-  padding-top: 19px;
+  padding-top: 23px;
 }
 .boutton{
-  padding:4px;
-  font-size: 22px;
+  padding: 9px;
+  font-size: 26px;
 }
 
 .hole {
