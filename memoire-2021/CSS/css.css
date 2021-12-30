@@ -61,7 +61,7 @@ h1{
 }
 
 img{
-    background: ;
+    background: background: var(--Black);
 }
 
 /*Pages*/
@@ -206,6 +206,7 @@ img{
     float: right;
     margin-right: 3vw;
     transition: ease-in-out 0.3s;
+    font-family : var(--TypoRegular)
 }
 
 #pastille-home-page:hover{
@@ -241,7 +242,7 @@ section{
 
 p{
     font-family: var(--TypoMedium);
-    font-size: 16px;
+    font-size: 18px;
     color: var(--textColor);
     line-height: 1.7;
     
@@ -325,13 +326,15 @@ p span {
     line-height: 1.7;
     color: var(--Orange);
     width: 350px;   
+    font-family : var(--TypoRegular)
 }
 
 .footnote-rose{
     font-size: 14px;
     line-height: 1.7;
     color: var(--Rose);
-    width: 350px;  
+    width: 350px; 
+    font-family : var(--TypoRegular)
 }
 
 
@@ -388,10 +391,12 @@ p span {
 
 .orange-sup{
     color: var(--Orange);
+    font-family : var(--TypoRegular)
 }
 
 .rose-sup{
     color: var(--Rose);
+    font-family : var(--TypoRegular)
 }
 
 
