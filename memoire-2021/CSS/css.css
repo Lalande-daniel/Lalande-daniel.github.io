@@ -522,6 +522,10 @@ p span {
         display: block;
         width:100%
     }
+    
+    p{
+        font-size:16px;
+    }
 
     p span{
         display: block;
