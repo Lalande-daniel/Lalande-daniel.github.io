@@ -206,7 +206,7 @@ img{
     float: right;
     margin-right: 3vw;
     transition: ease-in-out 0.3s;
-    font-family : var(--TypoRegular)
+    font-family : var(--TypoMedium)
 }
 
 #pastille-home-page:hover{
@@ -326,7 +326,7 @@ p span {
     line-height: 1.7;
     color: var(--Orange);
     width: 350px;   
-    font-family : var(--TypoRegular)
+    font-family : var(--TypoMedium)
 }
 
 .footnote-rose{
@@ -334,7 +334,7 @@ p span {
     line-height: 1.7;
     color: var(--Rose);
     width: 350px; 
-    font-family : var(--TypoRegular)
+    font-family : var(--TypoMedium)
 }
 
 
@@ -349,6 +349,7 @@ p span {
     display: inline-block;
     border-bottom: solid 3px transparent;
     transition: ease-in-out 0.2s;
+    font-family : var(--TypoBold)
 }
 
 .sommaire-items{
@@ -358,6 +359,7 @@ p span {
     margin-bottom: 8px;
     border-bottom: solid 3px transparent;
     transition: ease-in-out 0.2s;
+    font-family : var(--TypoMedium)
 }
 
 .sommaire-items:hover{
