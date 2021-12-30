@@ -45,6 +45,7 @@ html{
 body{
     background: var(--Black);
     color: var(--textColor);
+    padding:0px;
 }
 
 a{
