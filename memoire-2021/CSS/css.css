@@ -542,10 +542,12 @@ p span {
 
     .footnote-rose{
         margin-bottom: 24px;
+        width : 100%;
     }
 
     .footnote-orange{
         margin-bottom: 24px;
+        width : 100%;
     }
     
     .title{
