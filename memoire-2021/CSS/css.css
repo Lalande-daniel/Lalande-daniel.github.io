@@ -311,8 +311,9 @@ p span {
 .label-img{
     color: var(--textColorLabel);
     font-size: 13px;
-    font-style: italic;
+    letter-spacing: 0.04em;
     display: block;
+    line-height: 1.6;
 }
 
 
