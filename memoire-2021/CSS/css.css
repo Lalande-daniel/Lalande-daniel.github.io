@@ -62,7 +62,7 @@ h1{
 }
 
 img{
-    background: background: var(--Black);
+    background: var(--Black);
 }
 
 /*Pages*/
@@ -87,6 +87,7 @@ img{
     height: 100%;
     padding: 50px 90px;
     background:var(--Black);
+    box-sizing: border-box;
 }
 
 .sommaire-page{
@@ -98,6 +99,7 @@ img{
     height: 100%;
     padding: 50px 90px;
     background: black;
+    box-sizing: border-box;
 }
 
 .part-1{
@@ -109,6 +111,7 @@ img{
     height: 100%;
     padding: 50px 90px;
     background:black;
+    box-sizing: border-box;
 }
 
 .part-2{
@@ -120,6 +123,7 @@ img{
     height: 100%;
     padding: 50px 90px;
     background:var(--Black);
+    box-sizing: border-box;
 }
 
 .conclusion{
@@ -131,6 +135,7 @@ img{
     height: 100%;
     padding: 50px 90px;
     background:black;
+    box-sizing: border-box;
 }
 
 /*Titres*/
@@ -184,6 +189,7 @@ img{
     background: var(--gradiant);
     margin-right: 16px;
     border-radius: 50px;
+    font-family : var(--TypoMedium)
 }
 
 .second-title-content{
@@ -205,7 +211,7 @@ img{
     text-decoration: none;
     display: block;
     float: right;
-    margin-right: 3vw;
+    margin-right: 50px;
     transition: ease-in-out 0.3s;
     font-family : var(--TypoMedium)
 }
@@ -215,6 +221,7 @@ img{
     transform: rotate(6deg);
     box-shadow: 0px 0px 55px 30px rgba(255, 172, 48, 0.30);
     transition: ease-in-out 0.3s;
+   
 }
 
 #pastille-home-page:active{
@@ -229,7 +236,8 @@ img{
     top: 50%;
     color: var(--Black);
     font-size: 32px;
-    transform: rotate(12deg) translate(-12px, -92%);;
+    transform: rotate(12deg) translate(-12px, -92%);
+    font-family : var(--TypoMedium)
 }
 
 
@@ -476,7 +484,10 @@ p span {
 
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
+    
+   
+
     /*Pages*/
     
     body{
@@ -567,10 +578,11 @@ p span {
 
 
     /*PASTILLES*/
+
     #pastille-home-page{
-        width: 270px;
-        height: 270px;
-        top: 40px;
+        width: 470px;
+        height: 470px;
+        top: 100px;
         margin: 0px;
     }
 
@@ -579,11 +591,19 @@ p span {
         transform: rotate(3deg);
         top: 40px;
         margin: 0px;
+    }
+
+    #pastille-home-page:hover{
+        scale: none;
+        transform: rotate(0);
+        box-shadow: 0px 0px 55px 30px rgba(255, 172, 48, 0);
+        transition: ease-in-out 0.3s;
+        font-family : var(--TypoMedium)
 
     }
 
     .pastille-content{
-        font-size: 24px;
+        font-size: 32px;
     }
 
     #sommaire-fab{
@@ -611,4 +631,24 @@ p span {
         padding-bottom: 16px;
     }
 
+}
+
+
+@media screen and (max-width: 960px) {
+    
+    #pastille-home-page{
+        width: 240px;
+        height: 240px;
+        top: 50px;
+        margin: 0px;
+        font-size: 5px;
+    }
+
+    #pastille-home-page:active{
+        scale: 1.02;
+        transform: rotate(3deg);
+        top: 40px;
+        margin: 0px;
+
+    }
 }
