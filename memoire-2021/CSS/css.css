@@ -651,4 +651,8 @@ p span {
         margin: 0px;
 
     }
+    
+    .pastille-content{
+        font-size: 18px;
+    }
 }
