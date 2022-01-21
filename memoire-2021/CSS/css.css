@@ -159,7 +159,9 @@ img{
     background-image: linear-gradient(92deg, var(--Rose) 0%, var(--Orange) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 0px;  
+    margin-top: 0px; 
+    display: inline-block;
+    margin-bottom: 0px; 
 }
 
 .second-title{
