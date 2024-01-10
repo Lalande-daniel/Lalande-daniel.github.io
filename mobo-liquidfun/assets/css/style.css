@@ -1,0 +1,407 @@
+/*** RESET
+  The new CSS reset - version 1.8.4 (last updated 14.2.2023)
+  GitHub page: https://github.com/elad2412/the-new-css-reset
+  ***/
+  *:where(
+    :not(html, iframe, canvas, img, svg, video, audio, input):not(svg *, symbol *)
+  ) {
+  all: unset;
+  display: revert;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a,
+button {
+  cursor: revert;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+}
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+} 
+table {
+  border-collapse: collapse;
+}
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+textarea {
+  white-space: revert;
+}
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+:where(pre) {
+  all: revert;
+}
+::placeholder {
+  color: unset;
+}
+::marker {
+  content: initial;
+}
+:where([hidden]) {
+  display: none;
+}
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+:where(dialog:modal) {
+  all: revert;
+}
+/* RESPONSIVE */
+img,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+  inline-size: 100%;
+  vertical-align: middle;
+  /*width: 100%;*/
+}
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/* --------------------------------------------------------------------- */
+
+
+
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/RoobertPROTRIAL-Light.woff2);
+  }
+  
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/RoobertPROTRIAL-Regular.woff2);
+  }
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/RoobertPROTRIAL-Medium.woff2);
+  }
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/RoobertPROTRIAL-SemiBold.woff2);
+  }
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/RoobertPROTRIAL-Bold.woff2);
+  }
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: italic;
+    font-weight: 300;
+    src: url(../fonts/RoobertPROTRIAL-LightItalic.woff2);
+  }
+  
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/RoobertPROTRIAL-RegularItalic.woff2);
+  }
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: italic;
+    font-weight: 500;
+    src: url(../fonts/RoobertPROTRIAL-MediumItalic.woff2);
+  }
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: italic;
+    font-weight: 600;
+    src: url(../fonts/RoobertPROTRIAL-SemiBoldItalic.woff2);
+  }
+@font-face {
+    font-family: 'Roobert PRO';
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/RoobertPROTRIAL-BoldItalic.woff2);
+  }
+
+
+
+:root {
+	--padunit: 2.083vw; /* 1/48 */
+	--padunit-mobile: 10.67vw; /* 1/48 */
+	--pdlr-colbase: 1; /* marge colonne page (1 colonne) */
+	--pdtb-colbase: 3.625; /* marge colonne page (1 colonne) */
+
+	--font : 'Roobert PRO';
+	--bold: 700;
+	--semibold: 600;
+	--medium: 500;
+	--regular: 400;
+	--light: 300;
+
+	--rose: #FF98E5;
+	--jaune: #FFD84E;
+	--rouge: #EF4B40;
+	--violet: #CB46E8;
+	--bleue: #47C9EE;
+	--vert: #48EE6C;
+	--orange: #ef6b49;
+}
+
+
+
+/* SETUP */
+
+body{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-family: var(--font);
+}
+
+.section100{
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/* PADDING */
+
+.pdtb{
+    padding-top: calc(var(--padunit) * var(--pdlr-colbase));
+    padding-bottom: calc(var(--padunit) * var(--pdlr-colbase));
+}
+
+.pdlr{
+    padding-left: calc(var(--padunit) * var(--pdlr-colbase));
+    padding-right: calc(var(--padunit) * var(--pdlr-colbase));
+}
+
+
+
+/* PADDING TOP */
+
+.pt_05{
+    padding-top: calc(var(--padunit) * 0.5);
+}
+.pt_1{
+    padding-top: calc(var(--padunit) * 1);
+}
+.pt_1--05{
+    padding-top: calc(var(--padunit) * 1.5);
+}
+
+.pt_2{
+    padding-top: calc(var(--padunit) * 2);
+}
+
+.pt_3{
+    padding-top: calc(var(--padunit) * 3);
+}
+.pt_4{
+    padding-top: calc(var(--padunit) * 4);
+}
+.pt_5{
+    padding-top: calc(var(--padunit) * 5);
+}
+
+
+
+/* PADDING BOTTOM */
+
+.pb_05{
+    padding-bottom: calc(var(--padunit) * 0.5);
+}
+.pb_1{
+    padding-bottom: calc(var(--padunit) * 1);
+}
+
+.pb_2{
+    padding-bottom: calc(var(--padunit) * 2);
+}
+
+.pb_3{
+    padding-bottom: calc(var(--padunit) * 3);
+}
+
+.pb_3--05{
+    padding-bottom: calc(var(--padunit) * 3.5);
+}
+
+.pb_4{
+    padding-bottom: calc(var(--padunit) * 4);
+}
+
+
+
+/* PADDING LEFT */
+
+.pl_05{
+    padding-left: calc(var(--padunit) * 0.5);
+}
+.pl_1{
+    padding-left: calc(var(--padunit) * 1);
+}
+
+.pl_2{
+    padding-left: calc(var(--padunit) * 2);
+}
+
+.pl_3{
+    padding-left: calc(var(--padunit) * 3);
+}
+
+
+
+/* PADDING RIGHT */
+
+.pl_1{
+    padding-right: calc(var(--padunit) * 1);
+}
+
+.pl_2{
+    padding-right: calc(var(--padunit) * 2);
+}
+
+.pl_3{
+    padding-right: calc(var(--padunit) * 3);
+}
+
+
+
+/* MATTER JS */
+
+.matter-container{
+	width: 100%;
+	height: 100%;
+}
+
+#matter-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	pointer-events: all;
+}
+
+.matter-svg{
+	display: none;
+	pointer-events: auto;
+}
+.matter-path{
+	pointer-events: auto;
+}
+
+
+
+/* HEADER */
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--font);
+	z-index: 100;
+}
+
+.header__logo img{
+  width: 75%;
+  height: auto;
+}
+
+.header__nav{
+	display: flex;
+	align-items: center;
+}
+
+.header__a{
+	border-radius: 100px;
+	padding: 24px 32px;
+}
+
+
+
+/* HERO */
+
+.hero{
+	
+}
+
+.main-title{
+	font-size: 51px;
+}
+
+.hero__title{
+  position:absolute;
+  bottom: 5%;
+  right: 0;
+	display: flex;
+	flex-direction: column;
+	width: 44%;
+  pointer-events: none;
+}
+
+.hero__title span {
+    pointer-events: none; /* Permettre les interactions avec ces éléments */
+}
+
+.mouse{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	pointer-events: none;
+}
+
+#canvas{
+  width: 100%;
+  height: 100%;
+}
+#myCanvas{
+  width: 100%;
+  height: 100%;
+}
+
+.draw{
+  position: absolute;
+  top: 20%;
+  left: 40px;
+  font-size: 40px;
+  transform: rotate(-25deg);
+  font-weight: var(--medium);
+  color: var(--rose);
+  padding: 30px 40px;
+  border: solid 4px var(--rose);
+  border-radius: 200px;
+  z-index: -1;
+}
